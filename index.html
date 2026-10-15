@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>THE FEEDERS | Base Sepolia NFT Test Mint</title><link rel="stylesheet" href="/style.css"><link rel="stylesheet" href="/app.css"></head>
+<body>
+<div class="layout">
+  <main class="viewer">
+    <div class="card-stage" id="cardStage" aria-label="Interactive 3D collectible card"><article class="card" id="card" aria-label="THE FEEDERS collectible card">
+      <section class="card-face card-front" aria-label="Front of collectible card"><div class="artwork-container"><img id="cardArtwork" src="/assets/subscription-stu.png" alt="Subscription Stu artwork" draggable="false"></div><h1 class="card-title" id="cardTitle">Subscription Stu</h1><div class="card-serial" id="frontSerial">THE FEEDERS · GENESIS · #03</div></section>
+      <section class="card-face card-back" aria-label="Back of collectible card"><aside class="back-sidebar" aria-hidden="true"></aside><div class="back-content"><h2 class="back-title" id="backTitle">Subscription Stu</h2><hr class="back-divider"><p class="back-description" id="backDescription">A receipt-wrapped monster of recurring charges.</p><div class="badge-tags"><span class="tag">LWVADER</span><span class="tag" id="backEdition">Common · 30 copies max</span></div><div class="card-serial back-serial" id="backSerial">THE FEEDERS · #03</div></div></section>
+    </article></div>
+  </main>
+  <aside class="mint-panel"><img class="brand" src="/assets/feeders-logo.png" alt="THE FEEDERS logo"><h2>Genesis NFT test mint</h2><p class="sub">Base Sepolia testnet only · no real-value minting</p>
+    <label for="character">Character</label><select id="character"></select>
+    <label for="tier">Edition rarity</label><select id="tier"><option value="0">Common · 30 max</option><option value="1">Uncommon · 12 max</option><option value="2">Rare · 6 max</option><option value="3">Legendary · 2 max</option></select>
+    <label for="quantity">Quantity (1–10)</label><input id="quantity" type="number" min="1" max="10" value="1">
+    <div class="detail"><span>Token ID</span><strong id="tokenId">9</strong></div><div class="detail"><span>Unit price</span><strong id="price">—</strong></div><div class="detail"><span>Remaining supply</span><strong id="remaining">—</strong></div><div class="detail"><span>Your balance</span><strong id="balance">—</strong></div>
+    <button id="connect">Connect wallet</button><button id="mint" disabled>Mint on Base Sepolia</button>
+    <p id="status" role="status" aria-live="polite">Connect a browser wallet and configure a deployed contract address.</p>
+    <a href="https://sepolia.basescan.org/" target="_blank" rel="noopener noreferrer">Base Sepolia explorer ↗</a>
+  </aside>
+</div>
+<script src="/Card.js"></script><script type="module" src="/src/main.js"></script>
+</body></html>

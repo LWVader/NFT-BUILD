@@ -1,0 +1,16 @@
+{
+  "name": "the-feeders-base-sepolia",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "vite --host 127.0.0.1",
+    "build": "vite build",
+    "preview": "vite preview",
+    "compile": "hardhat compile",
+    "test": "hardhat test",
+    "deploy:sepolia": "hardhat run scripts/deploy.cjs --network baseSepolia",
+    "metadata": "node scripts/generate-metadata.cjs"
+  },
+  "dependencies": {"ethers": "^6.13.4"},
+  "devDependencies": {"@nomicfoundation/hardhat-ethers": "^3.0.8", "@openzeppelin/contracts": "^5.2.0", "chai": "^4.5.0", "dotenv": "^16.4.5", "hardhat": "^2.22.19", "vite": "^6.0.5"}
+}

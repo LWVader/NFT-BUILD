@@ -1,0 +1,6 @@
+[
+  {"id":1,"name":"Clickbait Casey","description":"A modern digital-life monster drawn to sensational headlines.","image":"/assets/sample-character.png"},
+  {"id":2,"name":"Doomscroll Dolly","description":"A modern digital-life monster who cannot stop scrolling.","image":"/assets/sample-character.png"},
+  {"id":3,"name":"Subscription Stu","description":"A receipt-wrapped monster of recurring charges.","image":"/assets/subscription-stu.png"},
+  {"id":4,"name":"Privacy Patty","description":"A modern digital-life monster guarding personal data.","image":"/assets/sample-character.png"}
+]
